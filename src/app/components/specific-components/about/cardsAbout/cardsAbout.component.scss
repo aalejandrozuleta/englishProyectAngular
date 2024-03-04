@@ -1,0 +1,57 @@
+@import "../.../../../../../sass/main.scss";
+.cardsAbout {
+  margin: 20px 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: 40% 60%;
+  width: 350px;
+  height: 420px;
+  place-items: center;
+  box-shadow: 3px 4px 4px rgb(185, 185, 185);
+
+  &:hover {
+    box-shadow: 8px 4px 4px rgb(185, 185, 185);
+  }
+
+  #figureCardsAbout {
+    @extend %totalSize;
+    @extend %flexCenter;
+    border-radius: 15px;
+    position: relative;
+    .imgCardsAbout {
+      width: 80%;
+      height: 80%;
+      border-radius: 25px;
+      position: absolute;
+      object-fit: cover;
+    }
+    #heartIconCardsAbout {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      &:hover {
+        filter: drop-shadow(2px 4px 10px red);
+      }
+    }
+  }
+
+  .blockInfoCardsAbout {
+    @extend %flexCenter;
+    @extend %totalSize;
+    flex-direction: column;
+
+    h3 {
+      text-align: center;
+      font-size: 1.5rem;
+      text-transform: capitalize;
+    }
+
+    p {
+      width: 95%;
+      text-align: center;
+    }
+  }
+}

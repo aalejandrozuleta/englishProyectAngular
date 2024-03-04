@@ -1,0 +1,50 @@
+@import "../../../../sass/main.scss";
+
+nav {
+  @extend %totalSize;
+}
+
+#menuPrimary {
+  padding: 0;
+  margin: 0;
+  @extend %flexCenter;
+  justify-content: space-around;
+  @extend %totalSize;
+
+  li {
+    @extend %listStyle;
+    width: 30%;
+    height: 50%;
+    @extend %gridCenter;
+    border-radius: 40px;
+
+    &:hover {
+      transition: 0.2s ease-in-out;
+      font-size: 1.2rem;
+      position: relative;
+      
+
+      &:after {
+        background-color: map-get($textColorsLight, "hover");
+        content: "";
+        position: absolute;
+        left: 10%;
+        bottom: -2px;
+        width: 80%;
+        height: 1px;
+      }
+    }
+
+    .optionsMenu {
+      @extend %flexCenter;
+      text-decoration: none;
+      text-transform: capitalize;
+      @extend %totalSize;
+      color: #fff;
+
+      &:hover {
+        color: unset;
+      }
+    }
+  }
+}

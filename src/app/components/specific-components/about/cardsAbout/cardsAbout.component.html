@@ -1,0 +1,12 @@
+<!-- cardsAbout.component.html -->
+<article class="cardsAbout">
+  <figure id="figureCardsAbout">
+    <img [src]="infoCard.img" alt="" class="imgCardsAbout">
+    <img src="../../../../../assets/icon/heart.svg" alt="" id="heartIconCardsAbout" (click)="addToFavorites(infoCard)">
+  </figure>
+
+  <div class="blockInfoCardsAbout">
+    <h3>{{ infoCard.title }}</h3>
+    <p>{{ infoCard.paragraph }}</p>
+  </div>
+</article>

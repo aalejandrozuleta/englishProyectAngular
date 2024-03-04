@@ -1,0 +1,43 @@
+@import "../../../../sass/main.scss";
+
+#contentSettings {
+  @extend %flexCenter;
+  #settingsHeader {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+  }
+
+  #subMenuOptionsLanguage {
+    position: absolute;
+    top: 82px;
+    right: 15%;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: map-get($primaryColorsLight, "secondary");
+    display: none; // Por defecto, oculto
+
+    &.open {
+      display: grid;
+    }
+
+    .contentLanguage {
+      @extend %flexCenter;
+      height: 40px;
+      width: 150px;
+      text-align: center;
+      border-radius: 20px;
+      justify-content: space-around;
+      margin: 10px;
+
+      &:hover {
+        background-color: map-get($primaryColorsLight, "hover");
+      }
+
+      .imgLanguage {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}

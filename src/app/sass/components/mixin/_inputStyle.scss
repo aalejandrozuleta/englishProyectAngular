@@ -1,0 +1,18 @@
+@mixin inputStyle(
+  $widthInput: 100%,
+  $heightInput: 40px,
+  $marginInput: auto,
+  $borderInput: 1px,
+  $borderRadius: 20px
+) {
+
+  width: $widthInput;
+  height: $heightInput;
+  margin: $marginInput;
+  border: $borderInput solid map-get($inputColorsLight, "inputBorder");
+  border-radius: $borderRadius;
+
+  &:hover {
+    border-color: map-get($inputColorsLight, "inputHover");
+  }
+}

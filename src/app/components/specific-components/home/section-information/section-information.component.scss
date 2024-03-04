@@ -1,0 +1,10 @@
+@import "../../../../sass/main.scss";
+
+#placesVisited {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  margin: 30px auto;
+}

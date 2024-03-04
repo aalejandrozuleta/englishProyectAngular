@@ -1,0 +1,18 @@
+@import '../../sass/main.scss';
+
+.blocksProducts {
+  @extend %gridCenter;
+  grid-template-columns: repeat(3,30%);
+  grid-template-rows: 20px auto;
+  place-content: center;
+  margin-top: 120px;
+  column-gap: 20px;
+
+  .titleBlockProducts {
+    grid-column: span 3;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+  }
+
+}
+

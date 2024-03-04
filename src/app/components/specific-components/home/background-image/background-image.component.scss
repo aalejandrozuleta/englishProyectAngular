@@ -1,0 +1,62 @@
+@import "../../../../sass/main.scss";
+
+#backgroundUsa {
+  margin-top: 80px;
+  width: 100%;
+  height: 450px;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.623),
+      rgba(0, 0, 0, 0.788)
+    ),
+    url(../../../../../assets/img/UsaPersons.jpg);
+  @extend %flexCenter;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // border-bottom-left-radius: 50px;
+  // border-bottom-right-radius: 50px;
+
+  #titleUsa {
+    font-size: 4rem;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255), -2px -2px 2px rgb(53, 53, 53);
+    color: transparent;
+  }
+
+  #textUsa {
+    margin-top: 40px;
+    width: 80%;
+    color: #fff;
+    text-align: center;
+    text-decoration: double;
+    font-size: 1.1rem;
+  }
+
+  #btnFavorite {
+    width: 200px;
+    height: 50px;
+    margin-top: 40px;
+    text-align: center;
+    @extend %flexCenter;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: map-get($buttonColorsLight, "button");
+    text-decoration: none;
+    color: map-get($buttonColorsLight, "buttonText");
+
+    &:hover {
+      color: #ffff;
+    }
+
+    &:hover {
+      transition: 0.5s ease;
+      background-color: map-get($buttonColorsLight, "hover");
+      box-shadow: 5px 3px 10px map-get($buttonColorsLight, "hover");
+    }
+  }
+}
+
+body.night-mode > #btnFavorite {
+  background-color: map-get($buttonColorsNight, "button");
+  color: map-get($buttonColorsNight, "buttonText");
+}

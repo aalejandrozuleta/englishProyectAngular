@@ -1,0 +1,14 @@
+<div class="card" [class.flipped]="isFlipped" (click)="handleCardFlip()">
+  <div class="cardFront">
+    <img [src]="infoCard.frontImage" alt="Front of the card" />
+  </div>
+
+  <div class="backCardBlock">
+    <div class="cardBack">
+      <p class="textCardBack">{{ infoCard.backText }}</p>
+      <div class="btnShop">
+        <a routerLink="/about" class="seeMoreBack">Ver más</a>
+      </div>
+    </div>
+  </div>
+</div>

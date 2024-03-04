@@ -1,0 +1,84 @@
+@import "../../../sass/main.scss";
+
+.card {
+  width: 230px;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  cursor: pointer;
+  border-radius: 20px;
+
+  .btnShop {
+    width: 50%;
+    height: 50%;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+  }
+
+  img {
+    @extend %totalSize;
+    // object-fit: contain;
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  .cardFront,
+  .cardBack {
+    @extend %totalSize;
+    @extend %gridCenter;
+    border-radius: 20px;
+    backface-visibility: hidden;
+    position: absolute;
+    text-align: center;
+    padding: 10px;
+
+    &:hover {
+      //@include boxShadow;
+      box-shadow: 3px 2px 5px #4d4c4c;
+    }
+  }
+
+  .cardFront {
+    transform: rotateY(0deg);
+    transition: transform 0.5s;
+  }
+
+  .cardBack {
+    transform: rotateY(180deg);
+    transition: transform 0.5s;
+    background-color: #f0f0f0;
+    @extend %gridCenter;
+    grid-template-rows: 60% 40%;
+
+    .textCardBack {
+      color: rgb(0, 0, 0) ;
+    }
+    
+    .seeMoreBack {
+      color: rgb(0, 0, 0);
+
+      &:hover{
+        color: map-get($textColorsLight , "hover" );
+      }
+    }
+  }
+
+  &:hover {
+    .cardFront {
+      transform: rotateY(-180deg);
+    }
+
+    .cardBack {
+      transform: rotateY(0deg);
+    }
+  }
+}
+
+
+

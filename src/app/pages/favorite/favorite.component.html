@@ -1,0 +1,11 @@
+<div *ngIf="favorites.length > 0" id="ubicationCards">
+  <app-cardsAbout
+    *ngFor="let card of favorites"
+    [infoCard]="card"
+    class="cardsAbout"
+    (addToFavoritesEvent)="removeFromFavorites($event)"
+  ></app-cardsAbout>
+</div>
+<div *ngIf="favorites.length === 0" id="ubicationText">
+  <h3>No hay favoritos guardados</h3>
+</div>

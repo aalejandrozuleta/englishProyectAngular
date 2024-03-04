@@ -1,0 +1,13 @@
+@import '../../../sass/main.scss';
+
+footer {
+  @extend %flexCenter;
+  flex-direction: column;
+  background-color: map-get($primaryColorsLight , "secondary" );
+
+  h2 {
+    color: #fff;
+    text-shadow: 5px 3px 10px rgb(136, 136, 136);
+    font-size: 1.7rem;
+  }
+}

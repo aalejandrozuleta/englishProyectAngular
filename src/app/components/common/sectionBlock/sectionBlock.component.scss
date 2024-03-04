@@ -1,0 +1,61 @@
+@import "../../../sass/main.scss";
+
+#blockSection {
+  @extend %flexCenter;
+  margin: 100px auto;
+  width: 90%;
+  height: 300px;
+  border-radius: 15px;
+  box-shadow: 3px 4px 4px rgb(228, 228, 228);
+
+  #figureBlockSection {
+    width: 40%;
+    height: 100%;
+    @extend %flexCenter;
+    #imageBlockSection {
+      width: 80%;
+      height: 80%;
+      border-radius: 15px;
+    }
+  }
+
+  #articleBlockSection {
+    width: 60%;
+    display: grid;
+    grid-template-rows: 30% 50% 20%;
+    place-items: center;
+
+    #titleBlockSection {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1.9rem;
+      color: rgb(136, 136, 136);
+      text-shadow: 4px 2px 10px rgb(138, 136, 136);
+    }
+
+    #paragraphBlockSection {
+      text-align: justify;
+      width: 80%;
+      margin: 0px auto;
+    }
+
+    #seeMoreBlockSection {
+      width: 30%;
+      height: 40px;
+      border-radius: 20px;
+      margin: 0 auto;
+      background-color: map-get($buttonColorsLight , "button" );
+      color: map-get($textColorsLight, "text" );
+      @extend %flexCenter;
+      text-decoration: none;
+      text-transform: capitalize;
+
+      &:hover {
+        background-color: map-get($buttonColorsLight, "hover" );
+        color:#fff;
+        transition: .5s ease;
+        box-shadow: 3px 4px 10px rgb(88, 88, 252);
+      }
+    }
+  }
+}

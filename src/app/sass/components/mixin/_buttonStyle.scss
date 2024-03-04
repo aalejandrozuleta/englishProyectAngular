@@ -1,0 +1,11 @@
+@mixin buttonsStyle($widthButton: 40px, $heightButton: 40px) {
+  width: $widthButton;
+  height: $heightButton;
+  background-color: map-get($buttonColorsLight, "button");
+  color: map-get($buttonColorsLight, "buttonText");
+  border: 1px solid map-get($buttonColorsLight, "border");
+
+  &:hover {
+    background-color: map-get($buttonColorsLight, "hover");
+  }
+}

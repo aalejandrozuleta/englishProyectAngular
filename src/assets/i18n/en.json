@@ -1,0 +1,122 @@
+{
+  "navBar": {
+    "titles": [
+      {
+        "name": "Home"
+      },
+      {
+        "name": "About country"
+      },
+      {
+        "name": "Favorites"
+      }
+    ]
+  },
+
+
+  "home": {
+    "blocks": [
+      {
+        "img": "../../../assets/img/UsaPersons.jpg",
+        "title": "This is the United States",
+        "description": "The United States offers a diverse and enriching experience for travelers. From spectacular natural landscapes to iconic urban attractions, the country provides a wide range of cultural, historical, and entertainment experiences. In addition to its famous tourist destinations, the United States also offers educational and professional opportunities, a vibrant culinary scene, and a rich historical heritage."
+      },
+      {
+        "img": "../../../assets/img/disney.jpeg",
+        "title": "The Wonderful World of Disney",
+        "description": "The incomparable experience of traveling to the world of Disney, a truly exceptional destination that captivates visitors of all ages with its unique charm and magical atmosphere. Immerse yourself in a universe where imagination comes to life and dreams come true at every corner of its theme parks and world-class resorts."
+      }
+    ]
+  },
+
+  "backgroundImage": {
+    "title": "UNITED STATES",
+    "paragraph": "The United States, officially known as the United States of America (USA), is a nation located in North America. It is the third largest country in the world by total area and the third most populous. The nation is composed of 50 states, a federal district (Washington D.C.), and several overseas territories. The capital is Washington, D.C., and the largest city is New York City."
+  },
+
+  "sectionInformation": {
+    "cards": [
+      {
+        "frontImage": "../../../../../assets/img/newYork.jpg",
+        "backText": "New York, the most populous city in the United States, is a melting pot of cultures, art, and opportunities. Known for its iconic skyline, bustling urban life, and ethnic diversity, New York is a global center for trade, finance, fashion, art, and entertainment."
+      },
+      {
+        "frontImage": "../../../../../assets/img/lakeTahoe.jpg",
+        "backText": "Incline Village is a world-renowned alpine lake on the border of California and Nevada. With its deep blue waters and surrounded by majestic mountains, it offers a variety of year-round activities such as boating, skiing, hiking, and cycling."
+      },
+      {
+        "frontImage": "../../../../../assets/img/TimesSquare.jpg",
+        "backText": "Times Square is an iconic destination in New York City, known for its vibrant atmosphere, bright lights, and wide range of entertainment options and activities, making it a must-visit spot when exploring the Big Apple."
+      },
+      {
+        "frontImage": "../../../../../assets/img/hollywoodSing.jpg",
+        "backText": "Hollywood is an iconic and emblematic place, recognized worldwide as the center of the entertainment industry, where dreams of fame and glamour come true for many on the big screen."
+      }
+    ]
+  },
+
+  "attractions": [
+    {
+      "img": "../../../assets/img/disney.jpeg",
+      "title": "Disneyland Resort",
+      "paragraph": "This is Disney's first theme park, opened in 1955 by Walt Disney. It consists of Disneyland Park and Disney California Adventure Park, both offering thrilling attractions, live entertainment, themed restaurants, and the opportunity to immerse yourself in the magical world of Disney."
+    },
+    {
+      "img": "../../../assets/img/WaltDisneyWorldResort.jpg",
+      "title": "Walt Disney World Resort",
+      "paragraph": "This theme park complex is one of the most visited tourist destinations in the world. It includes parks like Magic Kingdom, Epcot, Disney's Hollywood Studios, and Disney's Animal Kingdom, each offering unique and exciting experiences for the whole family."
+    },
+    {
+      "img": "../../../assets/img/UniversalStudiosHollywood.jpeg",
+      "title": "Universal Studios Hollywood",
+      "paragraph": "Explore iconic movie sets, enjoy thrilling attractions and live shows, and join your favorite characters in unforgettable adventures. Get ready to experience a cinematic journey like no other that will transport you to worlds of fantasy and unmatched fun!"
+    },
+    {
+      "img": "../../../assets/img/UniversalOrlandoResort.webp",
+      "title": "Universal Orlando Resort",
+      "paragraph": "From exploring the Wizarding World of Harry Potter to thrilling attractions inspired by your favorite movies and TV shows, this destination offers unforgettable experiences for the whole family. With exciting theme parks, unique themed hotels, and a variety of entertainment options, there's something for everyone."
+    },
+    {
+      "img": "../../../assets/img/FlagsMagicMountain.jpeg",
+      "title": "Six Flags Magic Mountain",
+      "paragraph": "The ultimate destination for extreme adventures and limitless fun. With an impressive lineup of world-class roller coasters and thrilling attractions, this destination promises a day full of adrenaline and excitement."
+    },
+    {
+      "img": "../../../assets/img/CedarPoint.jpeg",
+      "title": "Cedar Point",
+      "paragraph": "Known as the Roller Coaster Capital of the World, Cedar Point offers a variety of thrilling attractions that defy gravity, high-energy live shows, and entertainment for the whole family."
+    }
+  ],
+  "tourism": [
+    {
+      "img": "../../../assets/img/grancanon.avif",
+      "title": "Grand Canyon",
+      "paragraph": "Breathtaking gorge carved by the Colorado River, with cliffs of red rock stretching for miles, offering amazing panoramic views."
+    },
+    {
+      "img": "../../../assets/img/ParqueNacionalYellowstone.jpeg",
+      "title": "Yellowstone National Park",
+      "paragraph": "The world's first national park, famous for its geysers, such as Old Faithful, its canyons, like the Grand Canyon of the Yellowstone, and its abundant wildlife, including bison and bears."
+    },
+    {
+      "img": "../../../assets/img/ParqueNacionalYosemite.jpg",
+      "title": "Yosemite National Park",
+      "paragraph": "Home to majestic waterfalls, such as Yosemite Falls, towering granite cliffs, such as El Capitan, and lush forests, it's a paradise for nature lovers and hikers."
+    },
+    {
+      "img": "../../../assets/img/newYork.jpg",
+      "title": "New York City",
+      "paragraph": "The city that never sleeps, with vibrant energy, iconic skyscrapers, such as the Empire State Building, a diverse cultural scene, and iconic attractions like Times Square and Central Park."
+    },
+    {
+      "img": "../../../assets/img/hollywoodSing.jpg",
+      "title": "Hollywood",
+      "paragraph": "Hollywood is an iconic and emblematic place, recognized worldwide as the center of the entertainment industry, where dreams of fame and glamour come true for many on the silver screen."
+    },
+    {
+      "img": "../../../assets/img/losAngeles.jpg",
+      "title": "Los Angeles",
+      "paragraph": "The entertainment capital, with the famous Hollywood sign, sunny beaches, such as Venice Beach, and attractions like Universal Studios and theme parks."
+    }
+  ]
+}

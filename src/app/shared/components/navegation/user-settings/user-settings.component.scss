@@ -1,0 +1,37 @@
+@import "../../../../sass/main.scss";
+
+#contentUser {
+  @extend %flexCenter;
+  cursor: pointer;
+
+  #userHeader {
+    width: 50%;
+    height: 50%;
+  }
+
+  .content {
+    position: absolute;
+    top: 85px;
+    @extend %flexCenter;
+    flex-direction: column;
+    height: 100px;
+    width: 150px;
+    text-align: center;
+    background-color: map-get($primaryColorsLight, "secondary");
+    border-radius: 10px;
+
+    .optionsUser {
+      @extend %flexCenter;
+      @extend %totalSize;
+      text-decoration: none;
+      margin: 5px 0;
+      padding: 10px 0;
+
+      &:hover {
+        background-color: map-get($primaryColorsLight, "hover");
+        color: map-get($textColorsLight, "text");
+        border-radius: 30px;
+      }
+    }
+  }
+}

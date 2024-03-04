@@ -1,0 +1,9 @@
+<figure id="contentSettings">
+  <img src="assets/icon/word.svg" alt="" id="settingsHeader" (click)="toggleSettings()" />
+  <div id="subMenuOptionsLanguage" [class.open]="isSubMenuOpen">
+    <div *ngFor="let language of optionsLanguage" class="contentLanguage" (click)="changeLanguage(language.langCode)">
+      <img [src]="language.img" alt="" class="imgLanguage" />
+      <span class="titleLanguage">{{ language.title }}</span>
+    </div>
+  </div>
+</figure>

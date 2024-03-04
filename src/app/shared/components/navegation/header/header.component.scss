@@ -1,0 +1,17 @@
+@import "../../../../sass/main.scss";
+
+header {
+  display: grid;
+  grid-template-columns: 10% 50% repeat(3, 13%);
+  grid-template-rows: 80px;
+  place-content: center;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+
+  background-color: map-get($primaryColorsLight, "secondary");
+
+  #contentFlag {
+    @extend %flexCenter;
+  }
+}

@@ -1,0 +1,9 @@
+<app-background-image></app-background-image>
+<app-section-information></app-section-information>
+<div *ngFor="let data of myDataBlockSection">
+  <app-sectionBlock
+    [imgBlockSection]="data.img"
+    [title]="data.title"
+    [paragraph]="data.description">
+  </app-sectionBlock>
+</div>

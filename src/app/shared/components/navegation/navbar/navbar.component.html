@@ -1,0 +1,8 @@
+<nav>
+  <ul id="menuPrimary">
+    <li *ngFor="let option of optionMenu">
+      <a [routerLink]="option.path" class="optionsMenu">{{ option.name }}</a>
+    </li>
+  </ul>
+</nav>
+

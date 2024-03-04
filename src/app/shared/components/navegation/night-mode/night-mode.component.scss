@@ -1,0 +1,11 @@
+@import "../../../../sass/main.scss";
+
+#contentMode {
+  @extend %flexCenter;
+
+  .modeOption {
+    width: 50%;
+    height: 50%;
+    cursor: pointer;
+  }
+}

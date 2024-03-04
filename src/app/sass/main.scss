@@ -1,0 +1,53 @@
+//********* COMPONENTS **********/
+
+//!COLORS
+@import './components/colors/colorLight';
+@import './components/colors/colorNight';
+//?COLORS
+
+//!INHERITANCE
+@import './components/inherence/flexCenter';
+@import './components/inherence/gridCenter';
+@import './components/inherence/listStyle';
+@import './components/inherence/resertBox';
+@import './components/inherence/totalSize';
+//?INHERITANCE
+
+//!MIXIN
+@import './components/mixin/buttonStyle';
+@import './components/mixin/inputStyle';
+//?MIXIN
+
+//? *******COMPONENTS***********/
+
+
+//! DEFAULTS
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+.night-mode {
+  background-color: map-get($primaryColorsNight , "primary" );
+  color: map-get($textColorsNight , "text" );
+  transition: .7s ease-in ;
+
+  a {
+    color: map-get($textColorsNight , "text" );
+  }
+
+}
+
+body {
+  background-color: map-get($primaryColorsLight, "primary" );
+  transition: .7s ease-in ;
+  color: map-get($textColorsLight , "text" );
+  a {
+    color: map-get($textColorsLight, "text" );
+  }
+
+}
+
+//? *******

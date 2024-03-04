@@ -1,0 +1,13 @@
+<section class="blocksProducts">
+  <h3 class="titleBlockProducts">Atraciones</h3>
+  <div *ngFor="let card of attractions">
+    <app-cardsAbout [infoCard]="card" (addToFavoritesEvent)="addToFavorites($event)"></app-cardsAbout>
+  </div>
+</section>
+
+<section class="blocksProducts">
+  <h3 class="titleBlockProducts">Turismo</h3>
+  <div *ngFor="let card of tourism">
+    <app-cardsAbout [infoCard]="card" (addToFavoritesEvent)="addToFavorites($event)"></app-cardsAbout>
+  </div>
+</section>
