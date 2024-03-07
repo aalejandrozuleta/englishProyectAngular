@@ -33,11 +33,13 @@ body {
   background-color: map-get($primaryColorsNight , "primary" );
   color: map-get($textColorsNight , "text" );
   transition: .7s ease-in ;
-
   a {
     color: map-get($textColorsNight , "text" );
   }
 
+  #btnSubmit {
+    color: #fff;
+  }
 }
 
 body {

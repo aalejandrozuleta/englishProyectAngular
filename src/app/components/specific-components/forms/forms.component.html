@@ -1,0 +1,11 @@
+<section id="blockForm">
+  <figure id="blockImg">
+    <img [src]="formImg" alt="Form Image" *ngIf="formImg">
+  </figure>
+
+  <form [action]="formAction" [method]="formMethod" class="formBlock" (ngSubmit)="onSubmit()">
+    <app-inputForm *ngFor="let input of dataInputs" [inputType]="input.inputType" [placeholderText]="input.placeholderText" class="inputForm">
+    </app-inputForm>
+    <button type="submit" id="btnSubmit">{{buttonText}}</button>
+  </form>
+</section>

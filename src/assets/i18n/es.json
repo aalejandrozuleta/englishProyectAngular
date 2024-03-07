@@ -1,6 +1,6 @@
 {
-  "navBar":{
-    "titles":[
+  "navBar": {
+    "titles": [
       {
         "name": "Inicio"
       },
@@ -10,6 +10,13 @@
       {
         "name": "Favorito"
       }
+    ]
+  },
+
+  "UserSettings": {
+    "titles": [
+      { "path": "/singUp", "name": "Registrarse" },
+      { "path": "/login", "name": "Iniciar Sesión" }
     ]
   },
 
@@ -28,7 +35,7 @@
     ]
   },
 
-  "backgroundImage":{
+  "backgroundImage": {
     "title": "ESTADOS UNIDOS",
     "paragraph": "Estados Unidos, conocido oficialmente como los Estados Unidos de América (EE. UU.), es una nación ubicada en América del Norte. Es el tercer país más grande del mundo en área total y el tercero más poblado. La nación se compone de 50 estados, un distrito federal (Washington D.C.) y varios territorios de ultramar. La capital es Washington, D.C., y la ciudad más grande es Nueva York."
   },

@@ -1,7 +1,7 @@
 <figure id="contentUser" (click)="toggleContent()">
   <img src="assets/icon/user.svg" alt="" id="userHeader" />
   <div *ngIf="isOpen" class="content">
-    <a *ngFor="let option of optionsUser; let i = index" [routerLink]="option.path" class="optionsUser">
+    <a *ngFor="let option of optionsUser" [routerLink]="option.path" class="optionsUser">
       {{ option.name }}
     </a>
   </div>

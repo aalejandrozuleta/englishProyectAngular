@@ -1,3 +1,4 @@
+import { FormsComponent } from './components/specific-components/forms/forms.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -17,14 +18,18 @@ import { FavoriteComponent } from './pages/favorite/favorite.component';
 import { SectionBlockComponent } from './components/common/sectionBlock/sectionBlock.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { CardsAboutComponent } from './components/specific-components/about/cardsAbout/cardsAbout.component';
+import { InputFormComponent } from './shared/components/inputForm/inputForm.component';
+import { LoginComponent } from './pages/login/login.component';
+import { SingUpComponent } from './pages/singUp/singUp.component';
+
+
+
 
 //translate
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-
-
-
+import { FormsModule } from '@angular/forms';
 //
 
 @NgModule({
@@ -44,11 +49,16 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
     SectionBlockComponent,
     FooterComponent,
     CardsAboutComponent,
+    InputFormComponent,
+    LoginComponent,
+    SingUpComponent,
+    FormsComponent
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
     HttpClientModule,
+    FormsModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

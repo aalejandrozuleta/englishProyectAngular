@@ -1,0 +1,49 @@
+@import "../../.././sass/main.scss";
+
+#blockForm {
+  width: 60%;
+  height: 60vh;
+  margin: 100px auto 20px;
+  @extend %gridCenter;
+  grid-template-columns: repeat(2, 50%);
+  border-radius: 40px;
+  box-shadow: 5px 4px 20px map-get($textColorsLight, "secondary");
+
+  #blockImg {
+    @extend %totalSize;
+    @extend %flexCenter;
+
+    img {
+      width: 80%;
+      height: 80%;
+    }
+  }
+
+  .formBlock {
+    @extend %totalSize;
+    @extend %flexCenter;
+    flex-direction: column;
+
+    .inputForm {
+      width: 60%;
+    }
+
+    #btnSubmit {
+      width: 40%;
+      height: 40px;
+      border-radius: 20px;
+      margin-top: 20px;
+      border: none;
+      background-color: transparent;
+      box-shadow: 2px 4px 10px map-get($primaryColorsLight, "secondary");
+      cursor: pointer;
+
+      &:hover {
+        transition: 0.9s ease;
+        background-color: map-get($primaryColorsLight, "hover");
+        box-shadow: 5px 3px 10px map-get($primaryColorsLight, "hover");
+        color: map-get($buttonColorsLight, "text");
+      }
+    }
+  }
+}
